@@ -1,38 +1,5 @@
-.mobile-link-button,#blog-pager-home-link,.mobile-desktop-link{display:none}a:link{text-decoration:none}
-WaTrx:before{content: "\f232";
-font-family: FontAwesome;
-font-style: normal;
-font-weight: normal;
-text-decoration: inherit;
-width:100px;
-height:100px;
-color:lime;
-}
-.fa-whatsapp {font-size:25px;
-color:lime;
-text-shadow: 2px 2px 2px 2px #fff;
-}
-.preloader {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 9999;
-background-color: #fff;
-}
-.preloader .loading {
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
-font: 14px arial;
-color:#000;text-shadow: 1px 1px 2px #eee; text-align:center
-}
-.loading img{width:50px;height}
-
 p {color:#fff;text-align:center;margin-top:-65px;width:100%;z-index:1}
-site:before{ content: "PULSA CENTER"}
+site:before{content: "PULSA CENTER"}
 blink {
     -webkit-animation: 1s linear infinite condemned_blink_effect; // for android
     animation: 1s linear infinite condemned_blink_effect;
@@ -59,12 +26,20 @@ blink {
         visibility: visible;
     }
 }
+
+body,.post-body,#outer-wrapper,#content-wrapper,#main-wrapper {
+ padding:0px;margin:0px;font-size:14px
+}
+.post-body {
+ padding:0;margin:0px
+}
+
 body {
 background: url(https://raw.githubusercontent.com/webpulsa-id/jsweb/master/bg-app.png) no-repeat;
 background-size: 100% 100%;
 background-attachment:fixed;
 }
-.post {background-color:rgba(255, 255, 255, 0.6);color:#000;padding:5px;text-shadow:1px 1px 2px #fff}
+.post-body {background-color:rgba(255, 255, 255, 0.6);color:#000;padding:5px;text-shadow:1px 1px 2px #fff}
 table {background-color:rgba(255, 255, 255, 0.6);color:#000;text-shadow:1px 1px 2px #fff}
 .post img {
 transition-duration:0.5s;
@@ -296,7 +271,6 @@ a {text-decoration: none;}
 	height:35px;
 }
 
-#musick img {position:fixed;left:5px;bottom:30px;width:35px;height:30px;}
 #kotak-pesan {
   position:fixed !important;
   position:absolute; /* IE6 */
@@ -335,26 +309,7 @@ height:87%;
 #kotak-pesan a.close:hover {background:red;color:#fff;}
 .article {margin:10px auto;}
 
-#harga-mitra{}
-#harga-agen{display:none}
-#harga-agen2{display:none}
-#pendaftaran-agen{display:none}
-#pendaftaran-agen2{display:none}
-#set-up{display:none}
-#update-agen{display:none}
-#update-agen2{display:none}
-#update-mitra{}
-#halaman-pendaftaran{display:none}
-#kontak-marketing{display:none}
-#up-100{}
-#up-200{display:none}
-#list-pendaftaran{display:none}
-#share-agen{display:none}
-#share-agen2{display:none}
-#ban-agen{display:none}
-#ban-agen2{display:none}
-#ban-mitra{}
-#info-banner{display:none}
+
 /*delay*\
 @charset "UTF-8";
 
@@ -4011,3 +3966,5 @@ height:87%;
     animation-iteration-count: 1 !important;
   }
 }
+
+.breadcrumbs{border-bottom:1px solid #ff0000; font-size:20px;padding:10px;color:#fff;background:#4caf50;margin:-15px -5px 15px -5px;font-family:'Roboto',sans-serif;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border-top-left-radius:5px;border-top-right-radius:5px;}.breadcrumbs a span{color:#fff;text-decoration:none;font-weight:700;padding:0 2px;font-size:14px}.breadcrumbs a{color:#fff;padding:2px 2px 2px 0px;font-size:14px}.breadcrumbs span{font-weight:700;font-size:14px;text-shadow:none;}.breadcrumbs i{float:left;line-height:1.3;margin:0 5px}
