@@ -28,7 +28,7 @@ blink {
 }
 
 body,#main-wrapper {
- padding:0px;margin:5px 5px 15px 5px;font-size:14px}
+ padding:0px;margin:5px 5px 50px 5px;font-size:14px}
 
 body {
 background: url(https://raw.githubusercontent.com/webpulsa-id/jsweb/master/bg-app.png) no-repeat;
