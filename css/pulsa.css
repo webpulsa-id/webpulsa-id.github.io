@@ -27,12 +27,8 @@ blink {
     }
 }
 
-body,.post-body,#outer-wrapper,#content-wrapper,#main-wrapper {
- padding:0px;margin:0px;font-size:14px
-}
-.post {
- padding:3px;margin:0px
-}
+body,#outer-wrapper,#content-wrapper,#main-wrapper {
+ padding:0px;margin:0px;font-size:14px}
 
 body {
 background: url(https://raw.githubusercontent.com/webpulsa-id/jsweb/master/bg-app.png) no-repeat;
