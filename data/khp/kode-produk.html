@@ -1,0 +1,313 @@
+<!--<link href='//rawcdn.githack.com/webpulsa-id/jsweb/d7be04299e2f852ae0290c4ad12c3d4e8ad08a93/kode-produk.css' rel='stylesheet' type='text/css'/>
+<link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>-->
+    <style type="text/css">
+      body,.post-body,#outer-wrapper,#content-wrapper,#main-wrapper {
+ padding:0px;margin:0px;font-size:14px
+}
+      body {background-color:#009688 }
+.post-body {
+ padding:0;margin:0px
+}.post-body td img {float:right;height:25px;width:25px}#kode{font-size:0px;text:none}
+
+table { font-size: 12px; border: 1px solid #000;  font-family: Arial, Helvetica, sans-serif; width:100%}
+td { padding: 4px; margin: 3px; border: 1px solid #000;  }
+th { background-color: #104E8B; text-align:left;padding-left:4px; color: #FFF; font-weight: bold;  }
+tr {width:100%}
+.pots li td{color:#fff}
+#imgwa {float:right;height:25px;width:25px}
+/* Pengaturan Warna */
+.post tr td { color: #fff;text-shadow: 1px 1px 3px #000}
+
+        #forminq label.error,
+        .output {
+            color: #FB3A3A;
+            font-weight: bold;
+        }
+        
+        .table-header {
+          background:#cddc39;
+            height: 25px;
+          border: 1px #000 solid;
+          border-radius:0 20px 0 0;
+          margin-top:5px;
+          padding:5px;
+          text-shadow:none;
+            
+        }
+      .table-header a{color:#000}
+      .label-danger,
+.badge-danger{background-color:#d15b47!important;font-size:12px;}
+.label-success,
+.badge-success{background-color:#82af6f!important;font-size:10px;}
+    .tab-pane {background: url(http://2.bp.blogspot.com/-gwEckHVvyvM/VnbiQdPPZSI/AAAAAAAADcE/wwKnP62ARpc/s1600/loading.gi f) no-repeat center;}
+      .alert {padding:5px;background:#fff}</style>
+
+
+<div class="page-content">
+    <div class="row-fluid">
+        <div class="span12">
+<center style="margin-top:10px;font-size:13px">
+Cara transaksi : <span style="color:blue">KODE.NmrTujuan.PIN</span><br/>
+Contoh : <span style="color:red">AIGO1.08123456789.<span id="idpinrs">562483</span><pintrx/></span><br/>
+Kirim ke Nomor Center Transaksi<br/>
+<div style="color:red">
+	 Transaksi tidak akan berlaku jika menggunakan spasi.
+</div>
+</center>
+<hr/>
+          <script type="text/javascript" language="JavaScript" src="//drive.google.com/uc?export=download&id=1Ia20kZaOtZt9PeSIzguOnhmW8XBC4Zzp"></script>
+
+
+            <div class="page-content page-harga">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="tabbable">
+                             
+                            <div class="tab-content" style="background:url(https://1.bp.blogspot.com/-MkOeT-HJj1M/YEOYigWGdjI/AAAAAAAAA0k/Q_avlHbW0J0Nhp8_UjIcuOFHIs8fOY0lwCLcBGAsYHQ/s1014/bgwebpulsaid.jpg)no-repeat scroll;
+background-size: 100% 100% ; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;color:#000
+ padding: 5px 3px">
+                    
+	<div id="pulsa" style="background:#dd2c00;border: 1px #ff0000 solid; border-radius: 0px 9px 0px 0px; padding:3px;margin-top:15px">
+		<b><a href="#"></a>
+		&#8658; <span style="color: lime;">PULSA</span> - &#8659; <a href="#vgame">V-GAME</a> - &#8659; <a href="#ppob">PPOB</a></b>
+	</div>
+<div class="tab-pane fade in active pulsa-harga">
+<div class="alert alert-success" role="alert">
+ <strong>Sedang memuat data kode pulsa!</strong><blink>mohon tunggu.!</blink>
+</div>
+                                </div>
+<div id="vgame" style="background:#7b1fa2;border: 1px #ff0000 solid; border-radius: 0px 9px 0px 0px; padding:3px;margin-top:15px">
+			<b><a href="#"></a>
+			&#8658; <span style="color: lime;">V-GAME</span> - &#8657; <a href="#pulsa">PULSA</a> - &#8659; <a href="#ppob">PPOB</a></b>
+		</div>
+<div class="tab-pane fade game-harga">
+<div class="alert alert-success" role="alert">
+  <strong>Sedang memuat data kode game!</strong>mohon tunggu.!
+</div>
+                                </div>
+<div id="ppob" style="background:#ff9800;border: 1px #ff0000 solid; border-radius: 0px 9px 0px 0px; padding:3px;margin-top:15px">
+			<b><a href="#"></a>
+			&#8658; <span style="color: lime;">PPOB</span> - &#8657; <a href="#pulsa">PULSA</a> - &#8657; <a href="#vgame">V-GAME</a></b>
+		</div>
+<div class="tab-pane fade ppob-harga">
+<div class="alert alert-success" role="alert">
+  <strong>Sedang memuat data kode ppob!</strong>mohon tunggu.!
+</div>
+                                </div>
+                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    if(typeof localStorage.getItem("pulsa") !== "undefined"){
+            $.ajax({
+                type: "GET",
+                cache: true,
+                dataType: 'json',
+                url: 'https://www.khmitra.com/api/pricelistfront',
+                success: function (data) {
+                    localStorage.setItem("pulsa", JSON.stringify(data.pulsa));
+                    localStorage.setItem("ppob", JSON.stringify(data.ppob));
+                    localStorage.setItem("game", JSON.stringify(data.game));
+
+                    for (var i = 0; i < data.pulsa.length; i++) {
+                        var namaoperator = data.pulsa[i].namaoperator;
+                        var rows         = data.pulsa[i].data;
+                        var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                        html += '<div class="table-responsive">';
+                        html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                        html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                        for (var j = 0; j < rows.length; j++) {
+
+                        html += '<tbody>';
+                        html += '<tr>';
+                        html += '<td>'+rows[j].kodeproduk+'</td>';
+                        html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                        if(rows[j].gangguan=="Ya"){
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                        }else{
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                        }
+                        html += '<td style="padding:3px;text-align: center;"><span class="label label-success"><a href="https://api.whatsapp.com/send?phone=6282235478838&text='+rows[j].kodeproduk+'"><i class="fa fa-whatsapp"</i></a></span>';
+                        html += '</tr>';
+                        html += '</tbody>';
+                        }
+                        html += '</table></div>';
+                        $(".pulsa-harga").append(html);
+                    }
+
+                    for (var i = 0; i < data.ppob.length; i++) {
+                        var namaoperator = data.ppob[i].namaoperator;
+                        var rows         = data.ppob[i].data;
+                        var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                        html += '<div class="table-responsive">';
+                        html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                        html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                        for (var j = 0; j < rows.length; j++) {
+
+                        html += '<tbody>';
+                        html += '<tr>';
+                        html += '<td>'+rows[j].kodeproduk+'</td>';
+                        html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                        if(rows[j].gangguan=="Ya"){
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                        }else{
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                        }
+                        html += '<td style="padding:3px;text-align: center;"><span class="label label-success"><a href="https://api.whatsapp.com/send?phone=6282235478838&text='+rows[j].kodeproduk+'"><i class="fa fa-whatsapp"</i></a></span>';
+                        html += '</tr>';
+                        html += '</tbody>';
+                        }
+                        html += '</table></div>';
+                        $(".ppob-harga").append(html);
+                    }
+
+                    for (var i = 0; i < data.game.length; i++) {
+                        var namaoperator = data.game[i].namaoperator;
+                        var rows         = data.game[i].data;
+                        var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                        html += '<div class="table-responsive">';
+                        html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                        html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                        for (var j = 0; j < rows.length; j++) {
+
+                        html += '<tbody>';
+                        html += '<tr>';
+                        html += '<td>'+rows[j].kodeproduk+'</td>';
+                        html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                        if(rows[j].gangguan=="Ya"){
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                        }else{
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                        }
+                            html += '<td style="padding:3px;text-align: center;"><span class="label label-success"><a href="https://api.whatsapp.com/send?phone=6282235478838&text='+rows[j].kodeproduk+'"><i class="fa fa-whatsapp"</i></a></span>';
+
+                        html += '</tr>';
+                        html += '</tbody>';
+                        }
+                        html += '</table></div>';
+                        $(".game-harga").append(html);
+                    }
+
+                }
+            });
+        }else{
+            var pulsa =  JSON.parse(localStorage.getItem('pulsa'));
+            for (var i = 0; i < pulsa.length; i++) {
+                var namaoperator = pulsa[i].namaoperator;
+                var rows         =pulsa[i].data;
+                var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                html += '<div class="table-responsive">';
+                html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                for (var j = 0; j < rows.length; j++) {
+
+                html += '<tbody>';
+                html += '<tr>';
+                html += '<td>'+rows[j].kodeproduk+'</td>';
+                html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                if(rows[j].gangguan=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                }
+                if(rows[j].kosong=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].kosong+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].kosong+'</span>';
+                }
+                html += '</tr>';
+                html += '</tbody>';
+                }
+                html += '</table></div>';
+                $(".pulsa-harga").append(html);
+            }
+
+            var ppob =  JSON.parse(localStorage.getItem('ppob'));
+            for (var i = 0; i < ppob.length; i++) {
+                var namaoperator = ppob[i].namaoperator;
+                var rows         = ppob[i].data;
+                var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                html += '<div class="table-responsive">';
+                html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                for (var j = 0; j < rows.length; j++) {
+
+                html += '<tbody>';
+                html += '<tr>';
+                html += '<td>'+rows[j].kodeproduk+'</td>';
+                html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                html += '<td style="padding:3px;text-align:right">'+Intl.NumberFormat().format(rows[j].harga)+'</td>';
+                if(rows[j].gangguan=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                }
+                if(rows[j].kosong=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].kosong+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].kosong+'</span>';
+                }
+                html += '</tr>';
+                html += '</tbody>';
+                }
+                html += '</table></div>';
+                $(".ppob-harga").append(html);
+            }
+
+            var game =  JSON.parse(localStorage.getItem('game'));
+            for (var i = 0; i < game.length; i++) {
+                var namaoperator = game[i].namaoperator;
+                var rows         = game[i].data;
+                var html         = '<div class="table-header" id="big" style="line-height:25px"><a href="#pulsa">'+namaoperator+'</a></div>';
+                html += '<div class="table-responsive">';
+                html += '<table id="tableprodukvgame1" class="table table-striped table-bordered table-hover">';
+                html += '<thead><tr><th style="padding:3px;width:25%">Kode</th><th style="padding:3px;width:50%">Produk</th><th style="padding:3px;width:11%;text-align: center;">Gangguan</th><th style="padding:3px;width:10%;text-align: center;">Trx</th></tr></thead>';
+                for (var j = 0; j < rows.length; j++) {
+
+                html += '<tbody>';
+                html += '<tr>';
+                html += '<td>'+rows[j].kodeproduk+'</td>';
+                html += '<td style="padding:3px">'+rows[j].namaproduk+'</td>';
+                html += '<td style="padding:3px;text-align:right">'+Intl.NumberFormat().format(rows[j].harga)+'</td>';
+                if(rows[j].gangguan=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].gangguan+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].gangguan+'</span>';
+                }
+                if(rows[j].kosong=="Ya"){
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-success">'+rows[j].kosong+'</span>';
+                }else{
+                    html += '<td style="padding:3px;text-align: center;"><span class="label label-danger">'+rows[j].kosong+'</span>';
+                }
+                html += '</tr>';
+                html += '</tbody>';
+                }
+                html += '</table></div>';
+                $(".game-harga").append(html);
+            }
+        }
+    </script>
+
+    <!-- <script>
+    $('.nav-tabs li').click(function () {
+        $('.nav-tabs li.active').removeClass('active');
+        $(this).addClass('active');
+    });
+    </script> -->
+
+<script>
+  window.setTimeout(function() {
+    $(".alert").fadeTo(400, 0).slideUp(500, function(){
+      $(this).remove(); 
+    });
+  }, 5000);
+</script>
