@@ -1,0 +1,104 @@
+/* script css hiden */
+#waktututupdaftar{display:none;}
+#customer{display:none;}
+#linkwebpulsa{}
+#waktututupdaftar{}
+banlogo1:before,banlogo2:before,banlogo3:before,banlogo4:before,banlogo5:before,banlogo6:before {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+banlogo1:before{
+  content: '';
+  background:url('https://1.bp.blogspot.com/-mR1g16TbxGE/XUjXWfLyGeI/AAAAAAAAAQQ/gJnoNMy9dUs5H_bmFIJ20zS39HB9AWLhgCLcBGAs/s1600/show%2Bbanner.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+banlogo2:before{
+  content: '';
+  background:url('https://4.bp.blogspot.com/-cLPtJTMQyK8/XUrEzwVjorI/AAAAAAAAAQk/aRY4tQM2y0IzWlAlnwfqVP821YLc-lMzwCLcBGAs/s1600/IMG_20190807_190524.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+banlogo3:before{
+  content: '';
+  background:url('https://4.bp.blogspot.com/-dBt6RAtxmME/XVhVlY5hQ2I/AAAAAAAAAS4/UkH_otqwp7w2_Ra_N8w1_7xbcVZ0Ij4SwCLcBGAs/s1600/jalan%2Bcenter.gif');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+banlogo4:before{
+  content: '';
+  background:url('https://3.bp.blogspot.com/-ELTG6kDOD94/XYQ22bySEhI/AAAAAAAAAdY/v8f-Xmm_z34juHJRKiLIVQF6PlA6Uy5kACLcBGAsYHQ/s1600/www.server.webpulsa.id.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+banlogo5:before{
+  content: '';
+  background:url('https://4.bp.blogspot.com/-HATuCuunAGg/XVhVhn6GcDI/AAAAAAAAAS0/2InNu89tebk9YsDmiSO5CqjfFzzbWTPjgCLcBGAs/s1600/komisi.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+banlogo6:before{
+  content: '';
+  background:url('blackCarrot');
+  background-repeat:no-repeat;
+  background-size:100% 90px;
+}
+
+/* Info top dan sidebar */
+#apkpanduan,#infobottomcenter {}
+memberaktif:before {content:"Member Aktif : ±";display:block;} 
+infotop:before {content:'(っ◔◡◔)っ yang harus anda kenal sebelum berbisnis pulsa, mungkin banyak server2 yang menawarkan harga yg murah, tapi banyak juga transaksi lambat karena kualitas murahnya mengganggu transaksi anda: (1).Bergabunglah pada server yang berkualitas Aman dan terpercaya, lihat latar belakang server. (2).Pastikan ketika transaksi pengisian pulsa stabil dan cepat, karena kecepatan transaksilah yang kita utamakan, jika transaksi lambat konsumen pengen cepat bisa-bisa esoknya konsumen tersebut tidak akan membeli pulsa lagi pada kita. (3) jika harga agak mahal tapi transaksinya cepat itu adalah hal biasa., biasanya perselihan harga server 25 sampai 200 itu tidak masalah yang penting transaksi cepat dan saldo kita aman. (4).Pastikan CS cepat respon dan ramah kepada anda, bila anda ada keluhan transaksi tidak masuk atau lambat bisa anda komplain pada cs dengan respon cepat sesuai antrian.  (5).jangan terpengaruh dengan harga pulsa murah di waktu kumpanye atau promosi dimedia sosial atau ditempat lain, mungkin pas anda sudah punya saldo harganya naik atau saldo anda tidak aman bisa habis sendiri walaupun anda tidak transaksi. (6). Pastikan saldo anda aman pada server, maka pilihlah server yg anda percaya. (7).Berbisnislah di jalan yang benar, jangan merugikan pihak tertentu, mulailah sebelum terlambat dengan awal membaca bismillah.. Insya allah anda akan sukses jika anda bersungguh-sungguh dijalan yang benar.';display:block}
+
+/* idRs */
+wakh38::before {
+    content: "082235478838";
+}
+wakh37::before {
+    content: "082235478837";
+}
+wakh36::before {
+    content: "082235478836";
+}
+wakh96::before {
+    content: "087754785596";
+}
+namers::before {
+border: 1px solid #000;
+padding: 0px 2px 0px 1px;
+	content: "MEIDIKHA";
+background:none;
+}
+idrs::before {
+border: 1px solid #000;
+padding: 0px 2px 0px 1px;
+	content: "KH00001";
+	background:none;
+}
+pinrs::before {
+border: 1px solid #000;
+padding: 0px 2px 0px 1px;
+	content: "562483";
+background:none;
+}
+pintrx::before {
+content: "562483"
+}
+regnamakh::before {
+content: "MEIDIKHA"
+}
+apkrs::before {
+	content: "";
+}
+#idpinrs,#wakhshow {
+display:none
+}
+
+blockquote {
+    background:#8A2BE2!important;overflow:hidden;position:relative;margin:.5rem 0 1rem;transition:box-shadow .25s;border-radius:2px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);padding:9px 16px 16px 16px;text-shadow: 1px 1px 2px #000;filter:drop-shadow(0 8px 7px rgba(0,0,0,.4)); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.047); box-sizing: border-box; position: static;
+font-style:none;
+font-size:14px;
+}
+blockquote h3{
+    font-size:17px;
+}
