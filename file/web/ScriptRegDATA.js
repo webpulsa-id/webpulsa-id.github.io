@@ -2,7 +2,7 @@ var timeleft = 105001;		 var downloadTimer = setInterval(function(){		 	timeleft
 // tutup aktif
 
 // open DATA REG
-$('#noAdmin').val('0823-9084-4144');// WaCenter
+$('#noAdmin').val('0822-3547-8838');// WaCenter
 $('.whatsapp-btn').click(function () {
 $('#whatsapp').toggleClass('toggle');});
 		// Onclick Whatsapp Sent!
