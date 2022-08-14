@@ -1,7 +1,7 @@
 var timeleft = 105001;		 var downloadTimer = setInterval(function(){		 	timeleft= timeleft + Math.floor(Math.random() * 200);		 	document.getElementById('countdowntimer').textContent = timeleft;		 	if (timeleft <= 0)		 	clearInterval(downloadTimer);		 }, 1000);
 // tutup aktif
 
-// open DATA REG
+// open pendaftaran REG
 $('#noAdmin').val('0821-7469-4672');// WaCenter
 $('.whatsapp-btn').click(function () {
 $('#whatsapp').toggleClass('toggle');});
