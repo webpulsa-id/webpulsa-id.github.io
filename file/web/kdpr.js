@@ -12,7 +12,7 @@
 {"kodeproduk":"ADD1","namaproduk":"4GB NAT/ 5GB REG1.5/ 5GB BB/ 5.5GB BB2.5/ 6.5GB BO"},{"kodeproduk":"ADD2","namaproduk":"8GB NAT/11.5GB REG1.5/13GB BB/15GB BB2.5/16GB BOY"},{"kodeproduk":"ADD3","namaproduk":"30GB NAT/35GB REG1.5/40GB BB/45GB GB2.5/50GB BOY"},{"kodeproduk":"H.ADD","namaproduk":"CEK HARGA"}]},
 
 {"namaoperator":"AXIS DATA BRONET 60 HARI","data":[
-{"kodeproduk":"ADE1","namaproduk":"2GB 24JAM, 60 HARI"},{"kodeproduk":"ADE2","namaproduk":"3GB 24JAM, 60 HARI"},{"kodeproduk":"ADE3","namaproduk":"5GB 24JAM, 60 HARI"},{"kodeproduk":"ADE4","namaproduk":"8GB 24JAM, 60 HARI"},{"kodeproduk":"ADE5","namaproduk":"10GB 24JAM, 60 HARI"},{"kodeproduk":"ADE6","namaproduk":"12GB 24JAM, 60 HARI"},{"kodeproduk":"ADE7","namaproduk":"16GB 24JAM, 60 HARI"},{"kodeproduk":"H.","namaproduk":"CEK HARGA"}]},
+{"kodeproduk":"ADE1","namaproduk":"2GB 24JAM, 60 HARI"},{"kodeproduk":"ADE2","namaproduk":"3GB 24JAM, 60 HARI"},{"kodeproduk":"ADE3","namaproduk":"5GB 24JAM, 60 HARI"},{"kodeproduk":"ADE4","namaproduk":"8GB 24JAM, 60 HARI"},{"kodeproduk":"ADE5","namaproduk":"10GB 24JAM, 60 HARI"},{"kodeproduk":"ADE6","namaproduk":"12GB 24JAM, 60 HARI"},{"kodeproduk":"ADE7","namaproduk":"16GB 24JAM, 60 HARI"},{"kodeproduk":"H.ADE","namaproduk":"CEK HARGA"}]},
 
 {"namaoperator":"AXIS DATA VIP","data":[
 {"kodeproduk":"ADV1","namaproduk":"BRONET 24JAM 1.5GB NASIONAL, 30HR"},{"kodeproduk":"ADV2","namaproduk":"BRONET 24JAM 3GB NASIONAL, 30HR"},{"kodeproduk":"ADV3","namaproduk":"BRONET 24JAM 5GB NASIONAL, 30HR"},{"kodeproduk":"ADV4","namaproduk":"BRONET 24JAM 8GB NASIONAL, 30HR"},{"kodeproduk":"ADV5","namaproduk":"BRONET 24JAM 12GB NASIONAL, 30HR"},{"kodeproduk":"H.ADV","namaproduk":"CEK HARGA"}]},
