@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -23,13 +22,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="https://kodebayar.web.id/assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
   <!-- Toastr -->
   <link rel="stylesheet" href="https://kodebayar.web.id/assets/plugins/toastr/toastr.min.css">
-	<!-- jQuery -->
-	<script src="https://kodebayar.web.id/assets/plugins/jquery/jquery.min.js"></script>
+ <!-- jQuery -->
+ <script src="https://kodebayar.web.id/assets/plugins/jquery/jquery.min.js"></script>
 </head>
 <body class="hold-transition layout-top-nav layout-navbar-fixed ">
 <div class="wrapper">
   <style type="text/css">
-	.center {
+ .center {
   margin: auto;
   width: 50%;
 }
@@ -40,7 +39,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     
 
     <div class="brand-text font-weight-light" id="">
-    	<h3>Telkomsel</h3>
+     <h3>Telkomsel</h3>
+      <!-- Left navbar links -->
+      <!-- <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Hot Promo</a>
+        </li>
+      </ul> -->
     </div>
 
     
@@ -61,47 +66,59 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main content -->
   <div class="content">
     <div class="container">
-    	<div class="row justify-content-center" >
-							  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			    <div class="card card-danger card-outline">
-			      <div class="card-body">
-			        <h5 class="card-title">Nomor HP</h5>
-			        <div class="form-group">
-			        	<input id="token" name="ci_csrf_token" type="hidden" value="">
-			        	<input id="apikey" name="apikey" type="hidden" value="uM9GneAGJvhqREZ1YM2E0W5XLzRTR0tIbXlIclRuYTF5U1lOS3c9PQ==">
-			          <input type="tel" class="form-control form-control-border" id="nohp" name="nohp" placeholder="Masukkan nomor HP">
-			        </div>
-
-			        <button type="button" class="btn btn-block bg-danger" onclick="search('')">Lihat Paket</button>
-			        <span id="text_alert" class="d-none text-danger"></span>
-			      </div>
-			      <div class="overlay dark invisible" id="overlay_paging">
-				    <i class="fas fa-2x fa-sync-alt fa-spin"></i>	    
-				  </div>
-			    </div><!-- /.card -->
-			  </div>
-			  <!-- /.col-md-6 -->
-			</div>
-			<div class="row justify-content-center " id="list_menu">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="row" >
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="list_ms">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center" >
-				
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
-					<div class="row" id="response">
-						
-					</div>
-				</div>
-			</div>
+     <div class="row justify-content-center" > 
+     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+       <div class="card card-danger card-outline">
+         <div class="card-body">
+           <h5 class="card-title">Nomor HP</h5>
+           <div class="form-group">
+            <input id="token" name="ci_csrf_token" type="hidden" value="">
+             <input type="tel" class="form-control form-control-border" id="nohp" name="nohp" placeholder="Masukkan nomor HP">
+           </div>
+           <button type="button" class="btn btn-danger btn-block m-b" onclick="search('')">Lihat Pilihan Produk</button>
+           <span id="alert_text" class="d-none text-danger"></span>
+         </div>
+         <div class="overlay dark invisible" id="overlay_paging">
+        <i class="fas fa-2x fa-sync-alt fa-spin"></i>     
+      </div>
+       </div><!-- /.card -->
+     </div>
+     <!-- /.col-md-6 -->
+   </div>
+   <div class="row justify-content-center " id="list_menu">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+     <div class="row" >
+      
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad" id="list_ms">
+       <!-- <ul class="nav nav-tabs justify-content-center mb-3" role="tablist">
+                   <li class="nav-item">
+                     <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Home</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Profile</a>
+                   </li>
+                 </ul>
+       <button type="button" class="btn btn-outline-danger">Danger</button>
+       <button type="button" class="btn btn-outline-danger">Danger</button>
+       <button type="button" class="btn btn-outline-danger">Danger</button>
+       <button type="button" class="btn btn-outline-secondary float-right" id="btn_layout" onclick="changelayout()"><i class="fa fa-th-list"></i></button> -->
+      </div>
+      <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+       
+      </div> -->
+     </div>
+    </div>
+   </div>
+   <div class="row" id="json_respon">
+   </div>
+   <div class="row justify-content-center" >
+    
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+     <div class="row" id="hasil_respon">
+      
+     </div>
+    </div>
+   </div>
       <!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
@@ -110,117 +127,157 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- /.content-wrapper -->
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$("#nohp").keyup(function(e){
-			var nohp = $("#nohp").val();
-			nohp = nohp.replace(/[^0-9]/g,'');
-			$("#nohp").val(nohp);
-		})
-	});
-	function filter_paket(){
-		var value = $("#filter").val().toLowerCase();
-	    $("#response > .list_produk").filter(function() {
-	      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-	    });
-	}
+ $(document).ready(function(){
+  $("#nohp").keyup(function(e){
+   var nohp = $("#nohp").val();
+   nohp = nohp.replace(/[^0-9]/g,'');
+   $("#nohp").val(nohp);
+  })
+ });
 function show_paket(ms){
-	$("#filter").val('');
-	filter_paket();
-	if(ms!='0'){
+ if(ms!='0'){
+  var btn = $(".ms_"+ms);
 
-		$(".btn_ms").removeClass("active");
-		var btn = $(".ms_"+ms);
-		btn.addClass("active");
+  $(".btn_ms").removeClass("active");
+  btn.addClass("active");
 
-		$(".list_produk").addClass("d-none");
-		$(".list_"+ms).removeClass("d-none");
-	} else {
-		$(".btn_ms").removeClass("active");
-		var btn = $(".ms_"+ms);
-		btn.addClass("active");
-		
-		$(".list_produk").removeClass("d-none");
-	}
-		
+  $(".list_produk").addClass("d-none");
+  $(".list_"+ms).removeClass("d-none");
+ } else {
+  $(".btn_ms").removeClass("active");
+  $(".list_produk").removeClass("d-none");
+ }
+  
 }
 function changelayout(){
-	var html = $("#btn_layout").html();
-	// alert(html);
-	if(html=='<i class="fa fa-th-large"></i>'){
-		$(".list_produk").addClass("col-12");
-		$(".list_produk").removeClass("col-6");
-		$("#btn_layout").html('<i class="fa fa-th-list"></i>');
-	} else {
-		$(".list_produk").removeClass("col-12");
-		$(".list_produk").addClass("col-6");
-		$("#btn_layout").html('<i class="fa fa-th-large"></i>');
-	}
-		
+ var html = $("#btn_layout").html();
+ // alert(html);
+ if(html=='<i class="fa fa-th-large"></i>'){
+  $(".list_item").addClass("col-12");
+  $(".list_item").removeClass("col-6");
+  $("#btn_layout").html('<i class="fa fa-th-list"></i>');
+ } else {
+  $(".list_item").removeClass("col-12");
+  $(".list_item").addClass("col-6");
+  $("#btn_layout").html('<i class="fa fa-th-large"></i>');
+ }
+  
 }
+// function search(id){
+//  buka_overlay("overlay_paging");
+//  $.ajax({
+//   url  : 'https://kodebayar.web.id/Telkomsel/search',
+//   data  : $("#form_omni").serialize()+"&mlid="+id,
+//   type  : 'POST',
+//   dataType: 'JSON',
+//   success : function(data){
+//    tutup_overlay("overlay_paging");
+//    if(data.SubscriberType!=""){
+//     $("#hasil_respon").removeClass("d-none");
+//     $("#json_respon").html(data.menu);
+//     $("#hasil_respon").html(data.isi);
+//     pilih_menu(data.category);
+//     $("#alert_text").text("");
+//    } else {
+//     $("#alert_text").text("Paket tidak tersedia untuk nomor yang dituju");
+//    }
+    
+//   }, 
+//   error  : function(data){
+//    tutup_overlay("overlay_paging");
+//    alert("error");
+//   } 
+//  })
+// }
 function search(id){
 
-	var token = $("#token").val();
-	var nohp = $("#nohp").val();
-	if(nohp==""){
-		alert("Harap masukkan nohp");
-	} else {
-		$("#text_alert").addClass("d-none");
-		$("#list_menu").addClass("d-none");
-		$("#btn_layout").html('<i class="fa fa-th-list"></i>');
-		$("#response").addClass("d-none");
-		buka_overlay("overlay_paging");
-		$.ajax({
-			url 	: 'https://kodebayar.web.id/home/search_page?provider=TELKOMSEL',
-			data 	: { nohp : nohp, menu_id : id, ci_csrf_token : token },
-			type 	: 'POST',
-			dataType: 'JSON',
-			success : function(data){
-				if(data.is_valid_number==true){
-					$("#response").html(data.isi);
-					$("#list_ms").html(data.menu);
-					$("#response").removeClass("d-none");
-					$("#list_menu").removeClass("d-none");
-					$("#text_alert").addClass("d-none");
-				} else {
-					$("#text_alert").removeClass("d-none");
-					$("#text_alert").text(data.ket);
-				}
-					
-				$("#token").val(data.token);
-				tutup_overlay("overlay_paging");
+ var token = $("#token").val();
+ var nohp = $("#nohp").val();
+ if(nohp==""){
+  alert("Harap masukkan nohp");
+ } else {
+  $("#list_menu").addClass("d-none");
+  $("#hasil_respon").addClass("d-none");
+  $("#btn_layout").html('<i class="fa fa-th-list"></i>');
+  buka_overlay("overlay_paging");
+  $.ajax({
+   url  : 'https://kodebayar.web.id/Telkomsel/search',
+   data  : { nohp : nohp, mlid : id, ci_csrf_token : token },
+   type  : 'POST',
+   dataType: 'JSON',
+   success : function(data){
+    // $("#response").html(data.isi);
+    // $("#list_ms").html(data.menu);
+    // $("#response").removeClass("d-none");
+    // $("#text_alert").addClass("d-none");
+     
+    tutup_overlay("overlay_paging");
+    $("#token").val(data.token);
 
-			},
-			error 	: function(data){
-				tutup_overlay("overlay_paging");
-				alert("Terjadi kesalahan");
-			}
-		});
-	}	
+    if(data.SubscriberType!=""){
+     $("#list_menu").removeClass("d-none");
+     $("#hasil_respon").removeClass("d-none");
+     $("#hasil_respon").html(data.isi);
+     $("#list_ms").html(data.menu);
+     pilih_menu(data.category);
+     $("#alert_text").addClass("d-none");
+     $("#alert_text").text("");
+    } else {
+     $("#list_menu").addClass("d-none");
+     $("#hasil_respon").addClass("d-none");
+     $("#alert_text").removeClass("d-none");
+     $("#alert_text").text("Paket tidak tersedia untuk nomor yang dituju");
+    }
+   },
+   error  : function(data){
+    tutup_overlay("overlay_paging");
+    alert("Terjadi kesalahan");
+   }
+  })
+ } 
 }
+function order(id){
 
-function order(kode_produk, kode, unik, menu_id){
-	var token = $("#token").val();
-	var nohp = $("#nohp").val();
-	var kodebeli = $("#kodebeli_"+kode).val();
-	if(nohp==""){
-		alert("Harap masukkan nohp");
-	} else {
-		buka_overlay("overlay_paging_"+kode);
-		$.ajax({
-			url 	: 'https://kodebayar.web.id/home/inquiry_page?provider=TELKOMSEL',
-			data 	: { nohp : nohp, kode : kodebeli, id : unik, menu_id : menu_id, ci_csrf_token : token },
-			type 	: 'POST',
-			dataType: 'JSON',
-			success : function(data){
-				tutup_overlay("overlay_paging_"+kode);
-				location.href = 'https://kodebayar.web.id/v2/order_page/'+data.kode_bayar+"?provider=TELKOMSEL";
-			},
-			error 	: function(data){
-				tutup_overlay("overlay_paging_"+kode);
-				alert("Terjadi kesalahan");
-			}
-		});
-	}
+ var idnya = $("#id_"+id).val();
+ var namanya = $("#nama_"+id).val();
+ var harganya = $("#harga_"+id).val();
+ var token = $("#token").val();
+ var nohp = $("#nohp").val();
+ if(nohp==""){
+  alert("Harap masukkan nohp");
+ } else {
+  buka_overlay("overlay_paging_"+id);
+  $.ajax({
+   url  : 'https://kodebayar.web.id/Telkomsel/inquiry',
+   data  : { nohp : nohp, packageid : idnya, nama : namanya, harga : harganya, ci_csrf_token : token },
+   type  : 'POST',
+   dataType: 'JSON',
+   success : function(data){
+    // alert(data.payment_code);
+    tutup_overlay("overlay_paging_"+id);
+    location.href = 'https://kodebayar.web.id/Telkomsel/order/'+data.payment_code;
+   },
+   error  : function(data){
+    tutup_overlay("overlay_paging_"+id);
+    alert("Terjadi kesalahan");
+   }
+  });
+ }
+}
+function show_kode(){
+ $("#modal_kode").modal("show");
+}
+function pilih_menu(id){
+ $(".btn_category").removeClass("active");
+ $(".btn_"+id).addClass("active");
+ $(".list_item").addClass("d-none");
+ $("."+id).removeClass("d-none");
+}
+function select_menu(id){
+ $(".select_menu").removeClass("active");
+ $(".menu_"+id).addClass("active");
+ $("#mlid").val(id);
+ search(id);
 }
 function buka_overlay(overlay_id){
     $("#"+overlay_id).removeClass("invisible");
@@ -228,12 +285,7 @@ function buka_overlay(overlay_id){
 function tutup_overlay(overlay_id){
     $("#"+overlay_id).addClass("invisible");
 }
-function select_menu(id){
-	$(".select_menu").removeClass("active");
-	$(".menu_"+id).addClass("active");
-	// $("#mlid").val(id);
-	search(id);
-}
+
 </script></div>
 <!-- ./wrapper -->
 
